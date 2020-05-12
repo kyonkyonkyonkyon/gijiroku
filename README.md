@@ -27,7 +27,7 @@ Things you may want to cover:
 ## users テーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null;false,index:true|
+|name|string|null;false,index|
 
 ### Association
 - has_many :group_users
@@ -49,7 +49,7 @@ Things you may want to cover:
 ## groups テーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null;false,index:true|
+|name|string|null;false,index|
 
 ### Association
 - has_many :group_users
@@ -60,7 +60,7 @@ Things you may want to cover:
 ## messages テーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|text|-------|
+|text|text||
 |user|references|null;false,foreign_key:true|
 |group|references|null;false,foreign_key:true|
 
